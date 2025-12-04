@@ -1,0 +1,111 @@
+.
+├── _codi-TV
+│   ├── docker-compose.yaml
+│   └── scripts
+│       ├── logs.sh
+│       ├── start.sh
+│       └── stop.sh
+├── _monitoring
+│   ├── docker-compose.yaml
+│   └── scripts
+│       ├── logs.sh
+│       ├── start.sh
+│       └── stop.sh
+├── _neron
+│   ├── bot
+│   │   ├── config.yaml
+│   │   ├── docker-compose.yaml
+│   │   ├── requirements.txt
+│   │   ├── scripts
+│   │   └── venv
+│   ├── n8n
+│   │   ├── docker-compose.yaml
+│   │   ├── n8n_data
+│   │   └── scripts
+│   ├── node-red
+│   │   ├── docker-compose.yaml
+│   │   └── scripts
+│   └── ollama
+│       ├── bot
+│       ├── docker-compose.yaml
+│       └── scripts
+├── _nginx-proxy
+│   ├── docker-compose.yaml
+│   └── scripts
+│       ├── logs.sh
+│       ├── start.sh
+│       └── stop.sh
+├── bash
+│   ├── auto_git_push.sh
+│   ├── check_services.sh
+│   ├── create_homebox_structure.sh
+│   ├── docker_clean_all.sh
+│   ├── down_all.sh
+│   ├── git_push.sh
+│   ├── monitoring.sh
+│   ├── prune_docker.sh
+│   ├── rebuild_all.sh
+│   ├── restart_all.sh
+│   ├── start_all.sh
+│   ├── status_all.sh
+│   ├── stop_all.sh
+│   ├── up_all.sh
+│   ├── up_monitoring.sh
+│   └── update.sh
+├── dashboard
+│   ├── backend
+│   │   ├── Dockerfile
+│   │   ├── app.py
+│   │   └── requirements.txt
+│   ├── docker-compose.yaml
+│   └── frontend
+│       ├── Dockerfile
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── public
+│       └── src
+├── homeassistant
+│   ├── config
+│   │   ├── automations.yaml
+│   │   ├── blueprints
+│   │   ├── configuration.yaml
+│   │   ├── deps
+│   │   ├── home-assistant.log
+│   │   ├── home-assistant.log.1
+│   │   ├── home-assistant.log.fault
+│   │   ├── home-assistant_v2.db
+│   │   ├── home-assistant_v2.db-shm
+│   │   ├── home-assistant_v2.db-wal
+│   │   ├── scenes.yaml
+│   │   ├── scripts.yaml
+│   │   ├── secrets.yaml
+│   │   └── tts
+│   └── docker-compose.yaml
+├── networks
+│   └── homebox_netork.yaml
+├── portainer
+│   └── docker-compose.yaml
+├── structure.txt
+└── venv
+    ├── bin
+    │   ├── Activate.ps1
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── dotenv
+    │   ├── httpx
+    │   ├── normalizer
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.12
+    │   ├── python -> python3
+    │   ├── python3 -> /usr/bin/python3
+    │   └── python3.12 -> python3
+    ├── include
+    │   └── python3.12
+    ├── lib
+    │   └── python3.12
+    ├── lib64 -> lib
+    └── pyvenv.cfg
+
+39 directories, 70 files
