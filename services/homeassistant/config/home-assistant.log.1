@@ -1,0 +1,9 @@
+2025-12-03 21:57:23.963 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2025-12-03 21:57:28.492 WARNING (MainThread) [dbus_fast.message_bus] could not shut down socket
+Traceback (most recent call last):
+  File "src/dbus_fast/message_bus.py", line 532, in dbus_fast.message_bus.BaseMessageBus.disconnect
+OSError: [Errno 9] Bad file descriptor
+2025-12-03 21:57:32.705 WARNING (Recorder) [homeassistant.components.recorder.migration] The database is about to upgrade from schema version 52 to 53
+2025-12-03 21:57:32.705 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrading recorder db schema to version 53
+2025-12-03 21:57:32.810 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 53 done
+2025-12-03 22:12:33.949 ERROR (MainThread) [homeassistant.components.analytics] Error sending analytics to https://analytics-api.home-assistant.io/v1: ClientConnectorError(ConnectionKey(host='analytics-api.home-assistant.io', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(101, 'Network unreachable'))

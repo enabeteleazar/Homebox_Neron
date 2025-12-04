@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "eleazar",
+        "password": "JDJiJDEyJElEc1J6QWVBeXVKYTVvQUpwQ0U2bE84MU5PLndCc0ppVFJ4WldQSjk2bXV6NDZNYTV2dGUu"
+      }
+    ]
+  }
+}
