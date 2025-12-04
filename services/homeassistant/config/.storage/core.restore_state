@@ -6,7 +6,7 @@
     {
       "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-12-04T18:23:34.246857+00:00","last_reported":"2025-12-04T18:23:34.246857+00:00","last_updated":"2025-12-04T18:23:34.246857+00:00","context":{"id":"01KBN9NWB6YM9B6Y5N25ZJ62B5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Sauvegarde automatique"},"last_changed":"2025-12-04T18:23:34.463832+00:00","last_reported":"2025-12-04T18:23:34.463832+00:00","last_updated":"2025-12-04T18:23:34.463832+00:00","context":{"id":"01KBN9NWHZE926PJ565EBY0JF7","parent_id":null,"user_id":null}},
@@ -14,22 +14,22 @@
         "last_event_type": null,
         "last_event_attributes": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"person.nabet","state":"home","attributes":{"editable":true,"id":"nabet","device_trackers":["device_tracker.iphone_12"],"latitude":48.57101747814812,"longitude":3.7322963546244425,"gps_accuracy":12,"source":"device_tracker.iphone_12","user_id":"342e88fd491f4cf08b7adc41a250915f","friendly_name":"NABET"},"last_changed":"2025-12-04T18:23:36.306249+00:00","last_reported":"2025-12-04T18:25:31.698862+00:00","last_updated":"2025-12-04T18:25:31.698862+00:00","context":{"id":"01KBN9SF1JXV82TYJ1RG0BP79D","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-12-04T18:23:39.874874+00:00","last_reported":"2025-12-04T18:23:39.874874+00:00","last_updated":"2025-12-04T18:23:39.874874+00:00","context":{"id":"01KBN9P1V2WJMNH706KBZHAX0Y","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"device_tracker.iphone_12","state":"home","attributes":{"source_type":"gps","battery_level":40,"latitude":48.57101747814812,"longitude":3.7322963546244425,"gps_accuracy":12,"altitude":71.74999999999999,"vertical_accuracy":51,"friendly_name":"iPhone 12"},"last_changed":"2025-12-04T18:25:31.698168+00:00","last_reported":"2025-12-04T18:25:31.698168+00:00","last_updated":"2025-12-04T18:25:31.698168+00:00","context":{"id":"01KBN9SF1JQWJH747QB0MK0PW0","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_battery_level","state":"40","attributes":{"unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-40","friendly_name":"iPhone 12 Battery Level"},"last_changed":"2025-12-04T18:25:31.705602+00:00","last_reported":"2025-12-04T18:25:31.705602+00:00","last_updated":"2025-12-04T18:25:31.705602+00:00","context":{"id":"01KBN9SF1S64V15A651V8HM7SD","parent_id":null,"user_id":null}},
@@ -37,7 +37,7 @@
         "native_value": 40,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_battery_state","state":"Not Charging","attributes":{"Low Power Mode":false,"icon":"mdi:battery-40","friendly_name":"iPhone 12 Battery State"},"last_changed":"2025-12-04T18:23:40.105384+00:00","last_reported":"2025-12-04T18:25:31.706190+00:00","last_updated":"2025-12-04T18:25:31.706190+00:00","context":{"id":"01KBN9SF1TH3Z5CS7D86E3AQH0","parent_id":null,"user_id":null}},
@@ -45,7 +45,7 @@
         "native_value": "Not Charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_storage","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 Storage"},"last_changed":"2025-12-04T18:23:40.105579+00:00","last_reported":"2025-12-04T18:23:40.105579+00:00","last_updated":"2025-12-04T18:23:40.105579+00:00","context":{"id":"01KBN9P229RD4S8F8AN1V364FA","parent_id":null,"user_id":null}},
@@ -53,7 +53,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_ssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 SSID"},"last_changed":"2025-12-04T18:23:40.105780+00:00","last_reported":"2025-12-04T18:23:40.105780+00:00","last_updated":"2025-12-04T18:23:40.105780+00:00","context":{"id":"01KBN9P2291WJNZTP5VSZ1BMHJ","parent_id":null,"user_id":null}},
@@ -61,7 +61,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_bssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 BSSID"},"last_changed":"2025-12-04T18:23:40.105961+00:00","last_reported":"2025-12-04T18:23:40.105961+00:00","last_updated":"2025-12-04T18:23:40.105961+00:00","context":{"id":"01KBN9P229G1Z5QSHAXM4KGHP4","parent_id":null,"user_id":null}},
@@ -69,7 +69,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_sim_1","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 SIM 1"},"last_changed":"2025-12-04T18:23:40.106151+00:00","last_reported":"2025-12-04T18:23:40.106151+00:00","last_updated":"2025-12-04T18:23:40.106151+00:00","context":{"id":"01KBN9P22AQYM8RWJ35VMD5ZS4","parent_id":null,"user_id":null}},
@@ -77,7 +77,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_connection_type","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 Connection Type"},"last_changed":"2025-12-04T18:23:40.106330+00:00","last_reported":"2025-12-04T18:23:40.106330+00:00","last_updated":"2025-12-04T18:23:40.106330+00:00","context":{"id":"01KBN9P22AWTJ63CZ5360V4GRK","parent_id":null,"user_id":null}},
@@ -85,7 +85,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_sim_2","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 SIM 2"},"last_changed":"2025-12-04T18:23:40.106495+00:00","last_reported":"2025-12-04T18:23:40.106495+00:00","last_updated":"2025-12-04T18:23:40.106495+00:00","context":{"id":"01KBN9P22A5XARZDA9ATQT2NB4","parent_id":null,"user_id":null}},
@@ -93,7 +93,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_geocoded_location","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 Geocoded Location"},"last_changed":"2025-12-04T18:23:40.106690+00:00","last_reported":"2025-12-04T18:23:40.106690+00:00","last_updated":"2025-12-04T18:23:40.106690+00:00","context":{"id":"01KBN9P22A5DJQCGT2B5QCG3Z8","parent_id":null,"user_id":null}},
@@ -101,7 +101,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_last_update_trigger","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 Last Update Trigger"},"last_changed":"2025-12-04T18:23:40.107299+00:00","last_reported":"2025-12-04T18:23:40.107299+00:00","last_updated":"2025-12-04T18:23:40.107299+00:00","context":{"id":"01KBN9P22B8MEC56MYSD3S10X8","parent_id":null,"user_id":null}},
@@ -109,7 +109,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_app_version","state":"2025.12.0","attributes":{"icon":"mdi:cellphone","friendly_name":"iPhone 12 App Version"},"last_changed":"2025-12-04T18:23:40.107566+00:00","last_reported":"2025-12-04T18:23:40.107566+00:00","last_updated":"2025-12-04T18:23:40.107566+00:00","context":{"id":"01KBN9P22B226297JSSZ7A3SZT","parent_id":null,"user_id":null}},
@@ -117,7 +117,7 @@
         "native_value": "2025.12.0",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_location_permission","state":"Authorized Always","attributes":{"icon":"mdi:map","friendly_name":"iPhone 12 Location permission"},"last_changed":"2025-12-04T18:23:40.107823+00:00","last_reported":"2025-12-04T18:23:40.107823+00:00","last_updated":"2025-12-04T18:23:40.107823+00:00","context":{"id":"01KBN9P22BH9JDKVFZ2G92J260","parent_id":null,"user_id":null}},
@@ -125,7 +125,7 @@
         "native_value": "Authorized Always",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"sensor.iphone_12_audio_output","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"iPhone 12 Audio Output"},"last_changed":"2025-12-04T18:23:40.108109+00:00","last_reported":"2025-12-04T18:23:40.108109+00:00","last_updated":"2025-12-04T18:23:40.108109+00:00","context":{"id":"01KBN9P22CD1XDTDACYJDFYHN4","parent_id":null,"user_id":null}},
@@ -133,22 +133,22 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"scene.on","state":"unknown","attributes":{"friendly_name":"On"},"last_changed":"2025-12-04T18:23:40.352545+00:00","last_reported":"2025-12-04T18:23:40.352545+00:00","last_updated":"2025-12-04T18:23:40.352545+00:00","context":{"id":"01KBN9P2A02KRRDZMAK07S2RAE","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"scene.light_on","state":"2025-12-03T17:03:21.890876+00:00","attributes":{"friendly_name":"Light On"},"last_changed":"2025-12-04T18:23:40.354770+00:00","last_reported":"2025-12-04T18:23:40.354770+00:00","last_updated":"2025-12-04T18:23:40.354770+00:00","context":{"id":"01KBN9P2A239D1ND8PEX9CGKK7","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     },
     {
       "state": {"entity_id":"scene.turn_off_all_lights","state":"2025-12-03T17:03:22.788865+00:00","attributes":{"friendly_name":"Turn off all lights"},"last_changed":"2025-12-04T18:23:40.355784+00:00","last_reported":"2025-12-04T18:23:40.355784+00:00","last_updated":"2025-12-04T18:23:40.355784+00:00","context":{"id":"01KBN9P2A3BRN8S9S06QR2N1RW","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-04T18:38:40.409517+00:00"
+      "last_seen": "2025-12-04T20:38:40.463965+00:00"
     }
   ]
 }
