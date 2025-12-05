@@ -1,0 +1,21 @@
+services:
+  neron-telegram:
+    build: .
+    env_file:
+      - ${ENV_DIR}/.env
+
+    container_name: neron-telegram
+    restart: unless-stopped
+
+    volumes:
+      - ./data:/appp/data
+
+    ports:
+      - "${NERON_TELEGRAM}:5001"
+
+    networks:
+      - ${HOMEBOX_NETWORK}
+
+networks:
+   Homebox:
+    external: true

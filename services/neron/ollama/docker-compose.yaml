@@ -1,0 +1,21 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    env_file:
+      - ${ENV_DIR}/.env
+
+    container_name: neron-ollama
+    restart: unless-stopped
+
+    volumes:
+      - ./models:/models
+
+    ports:
+      - "${OLLAMA_PORT}:5000"
+
+    networks:
+      - ${HOMEBOX_NETWORK}
+
+networks:
+  Homebox:
+    external: true

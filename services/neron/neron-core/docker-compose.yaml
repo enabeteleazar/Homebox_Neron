@@ -1,0 +1,21 @@
+services:
+  neron-core:
+    build: .
+    env_file:
+      - ${ENV_DIR}/.env
+
+    container_name: neron-core
+    restart: unless-stopped
+
+    volumes:
+      - ./data:/app/data
+
+    ports:
+      - "${NERON_CORE_PORT}:4000"
+
+    networks:
+      - ${HOMEBOX_NETWORK}
+
+networks:
+  Homebox:
+    external: true

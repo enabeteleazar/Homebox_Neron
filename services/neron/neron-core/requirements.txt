@@ -1,0 +1,6 @@
+# Dépendances minimales
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+
