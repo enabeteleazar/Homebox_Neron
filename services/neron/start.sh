@@ -1,27 +1,66 @@
 #!/bin/bash
+# Script de démarrage de la stack Néron
+# Chemin : /homebox/services/neron/start.sh
 
-# Script pour lancer tous les services Nerón dans le bon ordre
+ROOT="/homebox"
+ENV_FILE="$ROOT/.env"
+NERON_DIR="$ROOT/services/neron"
 
-echo "Lancement des services Nerón..."
+echo "======================================"
+echo "        🚀 Démarrage de NÉRON"
+echo "======================================"
 
-# Nerón-core (hub central)
-echo "Démarrage de neron-core..."
-docker-compose --env-file /home/eleazar/homebox/.env -f neron-core/docker-compose.yaml up -d --build
+start_stack() {
+    NAME=$1
+    COMPOSE_PATH=$2
 
-# Ollama (IA)
-echo "Démarrage d'Ollama..."
-docker-compose --env-file /home/eleazar/homebox/.env -f ollama/docker-compose.yaml up -d --build
+    echo ""
+    echo "➡️  Lancement de $NAME ..."
+    docker compose --env-file "$ENV_FILE" -f "$COMPOSE_PATH" up -d --build
 
-# Nerón-Telegram (interface bot)
-echo "Démarrage de neron-telegram..."
-docker-compose --env-file /home/eleazar/homebox/.env -f neron-telegram/docker-compose.yaml up -d --build
+    if [ $? -ne 0 ]; then
+        echo "❌ Erreur lors du démarrage de $NAME"
+        exit 1
+    fi
 
-# Node-RED (automatisation locale)
-echo "Démarrage de Node-RED..."
-docker-compose --env-file /home/eleazar/homebox/.env -f node-red/docker-compose.yaml up -d --build
+    echo "✅ $NAME démarré"
+    sleep 2  # Petite pause pour stabilisation
+}
 
-# N8N (orchestration workflows)
-echo "Démarrage de N8N..."
-docker-compose --env-file /home/eleazar/homebox/.env -f n8n/docker-compose.yaml up -d --build
+# ORDRE LOGIQUE CORRIGÉ
+echo "📦 Démarrage de la couche infrastructure..."
 
-echo "Tous les services Nerón sont démarrés !"
+# 1. Ollama d'abord (moteur LLM)
+start_stack "ollama" "$NERON_DIR/ollama/docker-compose.yaml"
+
+echo ""
+echo "🧠 Démarrage de la couche intelligence..."
+
+# 2. neron-core (API centrale)
+start_stack "neron-core" "$NERON_DIR/neron-core/docker-compose.yaml"
+
+echo ""
+echo "💬 Démarrage de l'interface utilisateur..."
+
+# 3. neron-telegram (interface)
+start_stack "neron-telegram" "$NERON_DIR/neron-telegram/docker-compose.yaml"
+
+echo ""
+echo "⚙️  Démarrage des automatisations..."
+
+# 4. Services d'automatisation (parallèle possible)
+start_stack "node-red" "$NERON_DIR/node-red/docker-compose.yaml"
+start_stack "n8n" "$NERON_DIR/n8n/docker-compose.yaml"
+
+echo ""
+echo "======================================"
+echo "  ✅ Stack Néron opérationnelle"
+echo "======================================"
+echo ""
+echo "📊 État des services :"
+docker ps --filter "network=homebox" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
+echo ""
+echo "🔍 Vérification de l'API neron-core..."
+sleep 3
+curl -s http://localhost:4000/ | jq '.' || echo "⚠️  API non accessible"

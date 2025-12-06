@@ -5,7 +5,7 @@
 
 ROOT="/home/eleazar/homebox"
 ENV_FILE="$ROOT/.env"
-NERON_DIR="$ROOT/projects/neron"
+NERON_DIR="$ROOT/services/neron"
 
 echo "======================================"
 echo "        🚀 Démarrage de NÉRON"
