@@ -8,7 +8,7 @@ services:
       - dashboard-backend
     restart: unless-stopped
     networks:
-      -  Homebox
+      - Homebox
 
   dashboard-backend:
     build: ./backend
@@ -17,9 +17,14 @@ services:
       - "5000:5000"
     restart: unless-stopped
     networks:
-      -  Homebox
+      - Homebox
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    # IMPORTANT: Donner les permissions au groupe docker
+    group_add:
+      - "104"  # ID du groupe docker (vérifier avec: getent group docker)
+    # Permissions root si nécessaire (à utiliser en dernier recours)
+    privileged: true
 
 networks:
   Homebox:
