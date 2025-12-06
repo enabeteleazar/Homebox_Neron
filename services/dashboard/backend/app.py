@@ -114,3 +114,46 @@ def docker_containers():
 @app.get("/api/health")
 def health_check():
     return {"status": "healthy", "service": "homebox-backend"}
+
+# --- Actions sur les containers ---
+@app.post("/api/docker/{container_name}/start")
+def start_container(container_name: str):
+    if not client:
+        return {"error": "Docker client non disponible"}
+    
+    try:
+        container = client.containers.get(container_name)
+        container.start()
+        return {"success": True, "message": f"Container {container_name} démarré"}
+    except docker.errors.NotFound:
+        return {"error": f"Container {container_name} non trouvé"}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/api/docker/{container_name}/stop")
+def stop_container(container_name: str):
+    if not client:
+        return {"error": "Docker client non disponible"}
+    
+    try:
+        container = client.containers.get(container_name)
+        container.stop()
+        return {"success": True, "message": f"Container {container_name} arrêté"}
+    except docker.errors.NotFound:
+        return {"error": f"Container {container_name} non trouvé"}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/api/docker/{container_name}/restart")
+def restart_container(container_name: str):
+    if not client:
+        return {"error": "Docker client non disponible"}
+    
+    try:
+        container = client.containers.get(container_name)
+        container.restart()
+        return {"success": True, "message": f"Container {container_name} redémarré"}
+    except docker.errors.NotFound:
+        return {"error": f"Container {container_name} non trouvé"}
+    except Exception as e:
+        return {"error": str(e)}

@@ -3,10 +3,11 @@ import Tile from "./components/Tile";
 import ServerTile from "./components/ServerTile";
 import "./App.css";
 
+// Utiliser l'IP du serveur pour que le navigateur puisse accéder à l'API
+// Remplacer par l'IP de votre serveur Homebox
 const API_URL = window.location.hostname === "localhost" 
   ? "http://localhost:5000/api"
   : `http://${window.location.hostname}:5000/api`;
-
 
 function App() {
   const [systemData, setSystemData] = useState({
@@ -108,6 +109,10 @@ function App() {
               status={container.status}
               uptime={container.uptime}
               image={container.image}
+              onActionComplete={() => {
+                fetchSystemData();
+                fetchContainers();
+              }}
             />
           ))
         )}
