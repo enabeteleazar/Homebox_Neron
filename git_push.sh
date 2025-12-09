@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ENV_FILE="/home/eleazar/homebox/.env"
+ENV_FILE="/home/eleazar/Homebox_Neron/.env.global"
 
 # Charge proprement le fichier .env
 if [ -f "$ENV_FILE" ]; then
@@ -8,7 +8,7 @@ if [ -f "$ENV_FILE" ]; then
     source "$ENV_FILE"
     set +o allexport
 else
-    echo "Erreur : fichier .env introuvable !"
+    echo "Erreur : fichier .env.global introuvable !"
     exit 1
 fi
 

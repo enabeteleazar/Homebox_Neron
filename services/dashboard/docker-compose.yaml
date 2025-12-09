@@ -2,7 +2,7 @@ services:
   dashboard-frontend:
     build: ./frontend
     env_file:
-      - ${ENV_DIR}/.env
+      - ${ENV_VARIABLE}/.env.global
 
     container_name: dashboard-frontend
     restart: unless-stopped
@@ -13,12 +13,12 @@ services:
     depends_on:
       - dashboard-backend
     networks:
-      - ${HOMEBOX_NETWORK}
+      - ${NETWORK_HOMEBOX}
 
   dashboard-backend:
     build: ./backend
     env_file:
-      - ${ENV_DIR}/.env
+      - ${ENV_VARIABLE}/.env.global
 
     container_name: dashboard-backend
     restart: unless-stopped
@@ -35,7 +35,7 @@ services:
       - "${DASHBOARD_BACKEND_PORT}:5000"
 
     networks:
-      - ${HOMEBOX_NETWORK}
+      - ${NETWORK_HOMEBOX}
 
 
 networks:

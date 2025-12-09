@@ -1,7 +1,7 @@
 # =========================
 # Dossier projets
 # =========================
-projects/
+project/
 
 # =========================
 # Données générés par les services
@@ -33,6 +33,7 @@ __pycache__/
 # Environnements et secrets
 # =========================
 .env
+.env.global
 .env.local
 *.secret
 
