@@ -1,0 +1,120 @@
+[33mcommit 9a18a5380f160930164544d04772d22c571b1837[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Tue Dec 9 23:50:44 2025 +0100
+
+    chore: Ajout de send_telegram(test)
+
+[33mcommit d7a2bac6a1b372e5fe0a4c1ea3a1882f1aab66cc[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Tue Dec 9 23:30:58 2025 +0100
+
+    fix: correction cnx neron-telegram.
+
+[33mcommit 2463a4ae9b0221bf8d2ab972d53fbd8a052e31c0[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Tue Dec 9 23:00:37 2025 +0100
+
+    refactor: separation entre Neron & Serices.
+
+[33mcommit 0ae09964793bfb62efddb581c4b7ada85f865911[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Sat Dec 6 17:36:01 2025 +0000
+
+    refactor: ajout du service llama: "telegram-bot + ollama"
+
+[33mcommit 873941c83e0ff928c630085cf4493dd2969781a2[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Sat Dec 6 16:17:18 2025 +0000
+
+    refactor: reecriture du docker-compose avec env_dir
+
+[33mcommit 05a60aa5fd860d09c6af576ad23240bcf6167fd0[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Sat Dec 6 15:53:57 2025 +0000
+
+    ajout de bouton action sur dashboard
+
+[33mcommit a98c220e9c12ea358c79da85cddfadd88e4a4253[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Sat Dec 6 15:27:05 2025 +0000
+
+    feat: ajout dashboard avec suivi en temps réel de l'état des conteneurs
+
+[33mcommit 9b3f12c57cc8e80f775e73a84ec9ee0dddb19dbf[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Sat Dec 6 14:38:22 2025 +0000
+
+    ajoute de dashboard/ dans services/
+
+[33mcommit 3daea9abc7ac01035d4b25e76ec18907d0d64a0d[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Sat Dec 6 01:03:36 2025 +0000
+
+    fix: ajout homebox
+
+[33mcommit 69e61cfb4ea795a8b6b4794cbb8cfef0db481f13[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Sat Dec 6 00:53:43 2025 +0000
+
+    fix(ollama): correction configuration Docker — Correction port Ollama: 5000 -> 11434 (port standard) — Harmonisation nom réseau: Homebox -> homebox — Correction chemin volumes modèles: /root/.ollama/models — Ajout valeurs par défaut dans docker-compose — Communication neron-core <-> ollama maintenant OK
+
+[33mcommit 833f60263c831575f6427e2b357ef9aee33aaa7b[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Fri Dec 5 23:53:32 2025 +0000
+
+    reedit: ajout stack néron.
+
+[33mcommit 394db52495caa0b89d9a6475539d84c06c58f4dd[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Fri Dec 5 23:10:35 2025 +0000
+
+    Ajout de la stack néron (core Â+ telegram + node-red + n8n + ollama)
+
+[33mcommit 50ec210583130c8df4b786cc7b89f7bde7c2dcd6[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Thu Dec 4 21:54:28 2025 +0000
+
+    ajout du telegram-bot
+
+[33mcommit fef9eb41458964b3fc9518d602992dda90d17103[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Thu Dec 4 20:43:38 2025 +0000
+
+    ajout ollama
+
+[33mcommit fdcb6328dd10148d84ec09e5c2c56be53827cd74[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Thu Dec 4 18:49:40 2025 +0000
+
+    ajout service monitoring
+
+[33mcommit f62640672d2743e9d548e5b54661e91db9531efd[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Thu Dec 4 18:06:42 2025 +0000
+
+    5e Commit
+
+[33mcommit 91e4e9454caecad59e9dcf2308c40e8a8ae00bfb[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Thu Dec 4 18:00:59 2025 +0000
+
+    autogit + bot
+
+[33mcommit 60d5528229ce32d285af04e9a9847721eef3e56e[m
+Merge: 5e4f909 2ad8d34
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Thu Dec 4 17:50:09 2025 +0000
+
+    Merge branch 'main' of https://github.com/enabeteleazar/Homebox_Neron
+
+[33mcommit 5e4f90933596ff72f608c7accbb980474802bf79[m
+Author: enabeteleazar <nabet.eleazar@gmail.com>
+Date:   Thu Dec 4 17:48:02 2025 +0000
+
+    Initial commit Homebox
+
+[33mcommit 2ad8d349582a1b2a998d0966979e3470ea2dc170[m
+Author: enabeteleazar <161418955+enabeteleazar@users.noreply.github.com>
+Date:   Wed Dec 3 15:48:29 2025 +0100
+
+    Initial commit

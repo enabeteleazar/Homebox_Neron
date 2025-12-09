@@ -77,8 +77,8 @@ if [ $? -ne 0 ]; then
 fi
 
 # Envoi notification Telegram
-curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-    -d chat_id="$TELEGRAM_CHAT_ID" \
+curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+    -d "chat_id=${TELEGRAM_CHAT_ID}" \
     -d text="🚀 *HomeBox* – Commit poussé avec succès :\n\n💬 $FULL_MSG" \
     -d parse_mode="Markdown" >/dev/null
 

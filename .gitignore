@@ -6,6 +6,8 @@ project/
 # =========================
 # Données générés par les services
 # =========================
+neron/*/model
+neron/*/data
 services/*/model/
 services/*/data/
 services/*/node-red/data/
